@@ -2,22 +2,25 @@ package Day03;
 
 import java.util.Scanner;
 
-   //Highest Common Factor(HCF)
-    public class Qn01 {
+//Lowest Common Multiple (LCM)
+public class Qn02 {
     static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int b= sc.nextInt();
 
-        HCF(a,b);
+        LCM(a,b);
     }
-    public static void HCF(int a, int b){
-        while(b!=0){
+    public static void LCM(int a, int b){
+        int lcm=a*b;
+
+        while (b!=0){
             int temp=b;
             b=a%b;
             a=temp;
-
         }
-        System.out.println("Hcf = "+a);
+        int hcf=a;
+
+        System.out.println(lcm/a);
     }
 }

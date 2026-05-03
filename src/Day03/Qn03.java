@@ -2,22 +2,22 @@ package Day03;
 
 import java.util.Scanner;
 
-   //Highest Common Factor(HCF)
-    public class Qn01 {
+//Greatest Common Divisor
+public class Qn03 {
     static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        int b= sc.nextInt();
-
-        HCF(a,b);
+        int b=sc.nextInt();
+        G_C_D(a,b);
     }
-    public static void HCF(int a, int b){
+    public static void G_C_D(int a, int b){
         while(b!=0){
             int temp=b;
             b=a%b;
             a=temp;
 
         }
-        System.out.println("Hcf = "+a);
+        System.out.println(a);
     }
+
 }
