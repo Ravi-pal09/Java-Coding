@@ -1,0 +1,32 @@
+package Day03Arrays;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+//Calculate the sum of elements in an array
+
+public class Qn05 {
+    static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+
+        Calculate_Sum(arr);
+
+    }
+    public static void Calculate_Sum(int arr[]){
+        int sum=0;
+        for (int i=0; i<arr.length; i++){
+            sum+=arr[i];
+        }
+        System.out.println(sum);
+
+    }
+
+}
